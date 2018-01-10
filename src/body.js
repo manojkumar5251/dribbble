@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Row, Col, Panel } from "react-bootstrap";
+import { Grid, Row, Col, Panel, ProgressBar } from "react-bootstrap";
 
 class Body extends React.Component {
 	state = { height: "300px", width: "400px" };
@@ -16,9 +16,10 @@ class Body extends React.Component {
 			<div className="container body">
 				<Grid>
 					<Row style={{ paddingTop: "25px" }}>
-						<Col lg={2} />
+						<Col lg={2} md={2} />
 						<Col
 							lg={5}
+							md={5}
 							style={{
 								position: "relative",
 								marginBottom: "30px",
@@ -63,8 +64,8 @@ class Body extends React.Component {
 					</Row>
 
 					<Row className="main">
-						<Col lg={2} />
-						<Col lg={5}>
+						<Col lg={2} md={2} />
+						<Col lg={5} md={5}>
 							<div className="image-div">
 								<img
 									style={{
@@ -277,8 +278,107 @@ class Body extends React.Component {
 								</ul>
 							</div>
 						</Col>
-						<Col lg={4} />
-						<Col lg={1} />
+						<Col lg={3} md={3}>
+							<div
+								style={{ paddingBottom: 5, borderBottom: "1px solid #9d9d9d" }}>
+								<h5 className="tag">
+									<i style={{ paddingRight: "5px" }} className="fa fa-heart" />Like
+									<span className="pull-right">233 likes</span>{" "}
+								</h5>
+							</div>
+							<div
+								style={{
+									paddingBottom: 5,
+									borderBottom: "1px solid #9d9d9d",
+									marginBottom: 10,
+								}}>
+								<h5 className="tag">
+									<i style={{ paddingRight: "5px" }} className="fa fa-share" />
+									Like
+									<span className="pull-right">233 likes</span>{" "}
+								</h5>
+							</div>
+
+							<div className="row">
+								<i
+									style={{ paddingLeft: 15, fontSize: "20px" }}
+									className="fa fa-tint tag"
+								/>
+								<div
+									className="pull-right"
+									style={{ width: "80%", paddingTop: 5 }}>
+									<ProgressBar>
+										<ProgressBar striped bsStyle="success" now={35} key={1} />
+										<ProgressBar bsStyle="warning" now={20} key={2} />
+										<ProgressBar active bsStyle="danger" now={20} key={3} />
+										<ProgressBar active bsStyle="warning" now={25} key={3} />
+									</ProgressBar>
+								</div>
+							</div>
+
+							<div>
+								<h4>
+									More from Ron Design{" "}
+									<span
+										style={{
+											border: "1px solid #ddd",
+											padding: "0 3px",
+											background: "#ddd",
+										}}
+										className="pull-right tag">
+										&#43;
+									</span>
+								</h4>
+							</div>
+
+							<div className="">
+								<Col xs={6}>
+									<img
+										style={{ paddingBottom: "18px" }}
+										className="img-responsive"
+										src="https://cdn.dribbble.com/users/834691/screenshots/4078298/app_workflow_teaser.gif"
+									/>
+								</Col>
+								<Col xs={6}>
+									<img
+										style={{ paddingBottom: "18px" }}
+										className="img-responsive"
+										src="https://cdn.dribbble.com/users/1129214/screenshots/4048229/comp_13_teaser.gif"
+									/>
+								</Col>
+								<Col xs={6}>
+									<img
+										style={{ paddingBottom: "18px" }}
+										className="img-responsive"
+										src="https://cdn.dribbble.com/users/77531/screenshots/4004391/preview_8_teaser.gif"
+									/>
+								</Col>
+								<Col xs={6}>
+									<img
+										style={{ paddingBottom: "18px" }}
+										className="img-responsive"
+										src="https://cdn.dribbble.com/users/834691/screenshots/3916216/furniture_shop_teaser.gif"
+									/>
+								</Col>
+							</div>
+
+							<h4>Tags</h4>
+							<h5>
+								<span className="tag">bitcoin,</span>
+								<span className="tag">blockchain,</span>
+								<span className="tag">crypto</span>
+							</h5>
+							<h5>
+								<span className="tag">cryptocurrency,</span>
+								<span className="tag">data,</span>
+								<span className="tag">ico</span>
+							</h5>
+							<h5>
+								<span className="tag">bitcoin,</span>
+								<span className="tag">blockchain</span>
+								<span className="tag">crypto</span>
+							</h5>
+						</Col>
 					</Row>
 					<Row>
 						<center className="keyboard">

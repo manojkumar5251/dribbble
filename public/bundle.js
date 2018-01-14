@@ -26611,6 +26611,7 @@ var Header = function (_Component) {
 							_reactBootstrap.Navbar.Brand,
 							null,
 							_react2.default.createElement("img", {
+								style: { paddingLeft: '35%' },
 								alt: "dribbble",
 								src: "https://cdn.dribbble.com/assets/logo-small-4612353cefa78dfe35ba5e8e9d35da9f9305a3a516ef9675b5c37004c5862b6d.png"
 							})
@@ -38953,30 +38954,12 @@ var Body = function (_React$Component) {
 	_inherits(Body, _React$Component);
 
 	function Body() {
-		var _ref;
-
-		var _temp, _this, _ret;
-
 		_classCallCheck(this, Body);
 
-		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-			args[_key] = arguments[_key];
-		}
-
-		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Body.__proto__ || Object.getPrototypeOf(Body)).call.apply(_ref, [this].concat(args))), _this), _this.state = { height: "300px", width: "400px" }, _temp), _possibleConstructorReturn(_this, _ret);
+		return _possibleConstructorReturn(this, (Body.__proto__ || Object.getPrototypeOf(Body)).apply(this, arguments));
 	}
 
 	_createClass(Body, [{
-		key: "zoom",
-		value: function zoom() {
-			if (this.state.height === "300px") {
-				this.setState({ height: "600px", width: "800px" });
-			}
-			if (this.state.height === "600px") {
-				this.setState({ height: "300px", width: "400px" });
-			}
-		}
-	}, {
 		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
@@ -39054,575 +39037,577 @@ var Body = function (_React$Component) {
 							)
 						)
 					),
+					_react2.default.createElement(_reactBootstrap.Col, { lg: 2, md: 2, xs: 12 }),
 					_react2.default.createElement(
-						_reactBootstrap.Row,
-						{ className: "main" },
-						_react2.default.createElement(_reactBootstrap.Col, { lg: 2, md: 2 }),
+						_reactBootstrap.Col,
+						{ lg: 5, md: 5, xs: 12 },
 						_react2.default.createElement(
-							_reactBootstrap.Col,
-							{ lg: 5, md: 5 },
+							"div",
+							null,
+							_react2.default.createElement("img", { className: "img-responsive",
+								src: "https://cdn.dribbble.com/users/834691/screenshots/3978177/crypto_dashboard.gif"
+							})
+						),
+						_react2.default.createElement(
+							"div",
+							null,
 							_react2.default.createElement(
-								"div",
-								{ className: "image-div" },
-								_react2.default.createElement("img", {
-									style: {
-										maxWidth: this.state.width,
-										maxHeight: this.state.height
-									},
-									onClick: this.zoom.bind(this),
-									src: "https://cdn.dribbble.com/users/834691/screenshots/3978177/crypto_dashboard.gif"
-								})
+								"p",
+								{ style: { fontSize: "17px" } },
+								"It\u2019s a platform destined for keeping up-to-date information about all your accounts on other crypto platforms and managing them."
 							),
 							_react2.default.createElement(
-								"div",
-								null,
+								"p",
+								{ style: { fontSize: "17px" } },
 								_react2.default.createElement(
-									"p",
-									{ style: { fontSize: "17px" } },
-									"It\u2019s a platform destined for keeping up-to-date information about all your accounts on other crypto platforms and managing them."
+									"strong",
+									null,
+									"We're available for new projects"
 								),
+								" - ",
+								_react2.default.createElement("a", null),
 								_react2.default.createElement(
-									"p",
-									{ style: { fontSize: "17px" } },
-									_react2.default.createElement(
-										"strong",
-										null,
-										"We're available for new projects"
-									),
-									" - ",
-									_react2.default.createElement("a", null),
-									_react2.default.createElement(
-										"a",
-										{ href: "#" },
-										"ron.e@rondesignlab.com"
-									)
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ className: "response" },
-								_react2.default.createElement(
-									"h2",
-									{ style: { fontSize: "19px", marginBottom: "-20px" } },
-									"7 Responses"
-								),
-								_react2.default.createElement(
-									"div",
-									{ className: "timing" },
-									_react2.default.createElement(
-										"a",
-										{ href: "#" },
-										"oldest"
-									),
-									_react2.default.createElement(
-										"a",
-										{ href: "#" },
-										"newest"
-									),
-									_react2.default.createElement(
-										"a",
-										{ href: "#" },
-										"liked"
-									)
-								),
-								_react2.default.createElement(
-									"ul",
-									{ style: { marginTop: "30px" } },
-									_react2.default.createElement(
-										"li",
-										{ className: "list" },
-										_react2.default.createElement(
-											"h2",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ href: "#" },
-												_react2.default.createElement("img", {
-													className: "thumb-image",
-													src: "https://cdn.dribbble.com/users/1256118/avatars/small/2c8e4297c8b557a67df3e57e2c908d8c.jpg?1505983286"
-												}),
-												"Gray"
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											null,
-											_react2.default.createElement(
-												"p",
-												null,
-												"Well done! Come to check my works if you want \u270C\uD83C\uDFFB"
-											)
-										),
-										_react2.default.createElement(
-											"span",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "like", href: "#" },
-												"1"
-											),
-											_react2.default.createElement(
-												"span",
-												null,
-												"likes"
-											)
-										),
-										_react2.default.createElement(
-											"p",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "post", href: "#" },
-												"about 1 month ago"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										{ className: "list" },
-										_react2.default.createElement(
-											"h2",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ href: "#" },
-												_react2.default.createElement("img", {
-													className: "thumb-image",
-													src: "https://cdn.dribbble.com/users/1998175/avatars/small/60949d14e713cce13f445e4e94432c47.jpg?1512579655"
-												}),
-												"Taras Migulko"
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											null,
-											_react2.default.createElement(
-												"p",
-												null,
-												"Great colors and idea on your dashboard. Really love it! Thanks for publishing it"
-											)
-										),
-										_react2.default.createElement(
-											"span",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "like", href: "#" },
-												"1"
-											),
-											_react2.default.createElement(
-												"span",
-												null,
-												"likes"
-											)
-										),
-										_react2.default.createElement(
-											"p",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "post", href: "#" },
-												"about 1 month ago"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										{ className: "list" },
-										_react2.default.createElement(
-											"h2",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ href: "#" },
-												_react2.default.createElement("img", {
-													className: "thumb-image",
-													src: "https://cdn.dribbble.com/users/25514/avatars/small/070810be04e642201206c8fbdffcbf8a.png?1455536235"
-												}),
-												"Ramotion"
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											null,
-											_react2.default.createElement(
-												"p",
-												null,
-												"Looks cool, love how clean it is, prototype overall is also nicely done and executed. Good job",
-												" ",
-												_react2.default.createElement(
-													"a",
-													{ href: "#" },
-													"@Ron Design"
-												),
-												" "
-											)
-										),
-										_react2.default.createElement(
-											"span",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "like", href: "#" },
-												"1"
-											),
-											_react2.default.createElement(
-												"span",
-												null,
-												"likes"
-											)
-										),
-										_react2.default.createElement(
-											"p",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "post", href: "#" },
-												"about 1 month ago"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										{ className: "list" },
-										_react2.default.createElement(
-											"h2",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ href: "#" },
-												_react2.default.createElement("img", {
-													className: "thumb-image",
-													src: "https://cdn.dribbble.com/users/32742/avatars/small/1442487eec674feb1b3ca30a8984eb4e.png?1446548820"
-												}),
-												"Epic Coders \uD83D\uDE80"
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											null,
-											_react2.default.createElement(
-												"p",
-												null,
-												_react2.default.createElement(
-													"a",
-													{ href: "#" },
-													"@Ron Design"
-												),
-												"well executed. Is this being developed by someone or is it just a concept?"
-											)
-										),
-										_react2.default.createElement("span", null),
-										_react2.default.createElement(
-											"p",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "post", href: "#" },
-												"about 1 month ago"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										{ className: "list" },
-										_react2.default.createElement(
-											"h2",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ href: "#" },
-												_react2.default.createElement("img", {
-													className: "thumb-image",
-													src: "https://cdn.dribbble.com/users/589030/avatars/small/f28e9ceb03843b534035380076a24107.png?1515390876"
-												}),
-												"Med Badr Chemmaoui"
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											null,
-											_react2.default.createElement(
-												"p",
-												null,
-												"amazing work my friend!"
-											)
-										),
-										_react2.default.createElement("span", null),
-										_react2.default.createElement(
-											"p",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "post", href: "#" },
-												"about 1 month ago"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										{ className: "list" },
-										_react2.default.createElement(
-											"h2",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ href: "#" },
-												_react2.default.createElement("img", {
-													className: "thumb-image",
-													src: "https://cdn.dribbble.com/users/1751027/avatars/small/adc62518b5f62703e4971fcff15a0eb4.jpg?1506574140"
-												}),
-												"Rasika Warnasuriya"
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											null,
-											_react2.default.createElement(
-												"p",
-												null,
-												"Nice work.!"
-											)
-										),
-										_react2.default.createElement("span", null),
-										_react2.default.createElement(
-											"p",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "post", href: "#" },
-												"about 1 month ago"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										{ className: "list" },
-										_react2.default.createElement(
-											"h2",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ href: "#" },
-												_react2.default.createElement("img", {
-													className: "thumb-image",
-													src: "https://cdn.dribbble.com/users/1333064/avatars/small/7660c95c80ce9f341df7f7db574bb24c.png?1488144609"
-												}),
-												" ",
-												"Dimitris Chronopoulos"
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											null,
-											_react2.default.createElement(
-												"p",
-												null,
-												"Love it!"
-											)
-										),
-										_react2.default.createElement("span", null),
-										_react2.default.createElement(
-											"p",
-											null,
-											_react2.default.createElement(
-												"a",
-												{ className: "post", href: "#" },
-												"about 1 month ago"
-											)
-										)
-									)
+									"a",
+									{ href: "#" },
+									"ron.e@rondesignlab.com"
 								)
 							)
 						),
 						_react2.default.createElement(
-							_reactBootstrap.Col,
-							{ lg: 3, md: 3 },
+							"div",
+							{ className: "response" },
 							_react2.default.createElement(
-								"div",
-								{
-									style: { paddingBottom: 5, borderBottom: "1px solid #9d9d9d" } },
-								_react2.default.createElement(
-									"h5",
-									{ className: "tag" },
-									_react2.default.createElement("i", { style: { paddingRight: "5px" }, className: "fa fa-heart" }),
-									"Like",
-									_react2.default.createElement(
-										"span",
-										{ className: "pull-right" },
-										"233 likes"
-									),
-									" "
-								)
+								"h2",
+								{ style: { fontSize: "19px", marginBottom: "-20px" } },
+								"7 Responses"
 							),
 							_react2.default.createElement(
 								"div",
-								{
-									style: {
-										paddingBottom: 5,
-										borderBottom: "1px solid #9d9d9d",
-										marginBottom: 10
-									} },
+								{ className: "timing" },
 								_react2.default.createElement(
-									"h5",
-									{ className: "tag" },
-									_react2.default.createElement("i", { style: { paddingRight: "5px" }, className: "fa fa-share" }),
-									"Like",
-									_react2.default.createElement(
-										"span",
-										{ className: "pull-right" },
-										"233 likes"
-									),
-									" "
+									"a",
+									{ href: "#" },
+									"oldest"
+								),
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"newest"
+								),
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"liked"
 								)
 							),
 							_react2.default.createElement(
-								"div",
-								{ className: "row" },
-								_react2.default.createElement("i", {
-									style: { paddingLeft: 15, fontSize: "20px" },
-									className: "fa fa-tint tag"
-								}),
+								"ul",
+								{ style: { marginTop: "30px" } },
 								_react2.default.createElement(
-									"div",
-									{
-										className: "pull-right",
-										style: { width: "80%", paddingTop: 5 } },
+									"li",
+									{ className: "list" },
 									_react2.default.createElement(
-										_reactBootstrap.ProgressBar,
+										"h2",
 										null,
-										_react2.default.createElement(_reactBootstrap.ProgressBar, { striped: true, bsStyle: "success", now: 35, key: 1 }),
-										_react2.default.createElement(_reactBootstrap.ProgressBar, { bsStyle: "warning", now: 20, key: 2 }),
-										_react2.default.createElement(_reactBootstrap.ProgressBar, { active: true, bsStyle: "danger", now: 20, key: 3 }),
-										_react2.default.createElement(_reactBootstrap.ProgressBar, { active: true, bsStyle: "warning", now: 25, key: 3 })
-									)
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								null,
-								_react2.default.createElement(
-									"h4",
-									null,
-									"More from Ron Design",
-									" ",
+										_react2.default.createElement(
+											"a",
+											{ href: "#" },
+											_react2.default.createElement("img", {
+												className: "thumb-image",
+												src: "https://cdn.dribbble.com/users/1256118/avatars/small/2c8e4297c8b557a67df3e57e2c908d8c.jpg?1505983286"
+											}),
+											"Gray"
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										null,
+										_react2.default.createElement(
+											"p",
+											null,
+											"Well done! Come to check my works if you want \u270C\uD83C\uDFFB"
+										)
+									),
 									_react2.default.createElement(
 										"span",
-										{
-											style: {
-												border: "1px solid #ddd",
-												padding: "0 3px",
-												background: "#ddd"
-											},
-											className: "pull-right tag" },
-										"+"
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "like", href: "#" },
+											"1"
+										),
+										_react2.default.createElement(
+											"span",
+											null,
+											"likes"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "post", href: "#" },
+											"about 1 month ago"
+										)
 									)
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ className: "" },
-								_react2.default.createElement(
-									_reactBootstrap.Col,
-									{ xs: 6 },
-									_react2.default.createElement("img", {
-										style: { paddingBottom: "18px" },
-										className: "img-responsive",
-										src: "https://cdn.dribbble.com/users/834691/screenshots/4078298/app_workflow_teaser.gif"
-									})
 								),
 								_react2.default.createElement(
-									_reactBootstrap.Col,
-									{ xs: 6 },
-									_react2.default.createElement("img", {
-										style: { paddingBottom: "18px" },
-										className: "img-responsive",
-										src: "https://cdn.dribbble.com/users/1129214/screenshots/4048229/comp_13_teaser.gif"
-									})
+									"li",
+									{ className: "list" },
+									_react2.default.createElement(
+										"h2",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "#" },
+											_react2.default.createElement("img", {
+												className: "thumb-image",
+												src: "https://cdn.dribbble.com/users/1998175/avatars/small/60949d14e713cce13f445e4e94432c47.jpg?1512579655"
+											}),
+											"Taras Migulko"
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										null,
+										_react2.default.createElement(
+											"p",
+											null,
+											"Great colors and idea on your dashboard. Really love it! Thanks for publishing it"
+										)
+									),
+									_react2.default.createElement(
+										"span",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "like", href: "#" },
+											"1"
+										),
+										_react2.default.createElement(
+											"span",
+											null,
+											"likes"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "post", href: "#" },
+											"about 1 month ago"
+										)
+									)
 								),
 								_react2.default.createElement(
-									_reactBootstrap.Col,
-									{ xs: 6 },
-									_react2.default.createElement("img", {
-										style: { paddingBottom: "18px" },
-										className: "img-responsive",
-										src: "https://cdn.dribbble.com/users/77531/screenshots/4004391/preview_8_teaser.gif"
-									})
+									"li",
+									{ className: "list" },
+									_react2.default.createElement(
+										"h2",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "#" },
+											_react2.default.createElement("img", {
+												className: "thumb-image",
+												src: "https://cdn.dribbble.com/users/25514/avatars/small/070810be04e642201206c8fbdffcbf8a.png?1455536235"
+											}),
+											"Ramotion"
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										null,
+										_react2.default.createElement(
+											"p",
+											null,
+											"Looks cool, love how clean it is, prototype overall is also nicely done and executed. Good job",
+											" ",
+											_react2.default.createElement(
+												"a",
+												{ href: "#" },
+												"@Ron Design"
+											),
+											" "
+										)
+									),
+									_react2.default.createElement(
+										"span",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "like", href: "#" },
+											"1"
+										),
+										_react2.default.createElement(
+											"span",
+											null,
+											"likes"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "post", href: "#" },
+											"about 1 month ago"
+										)
+									)
 								),
 								_react2.default.createElement(
-									_reactBootstrap.Col,
-									{ xs: 6 },
-									_react2.default.createElement("img", {
-										style: { paddingBottom: "18px" },
-										className: "img-responsive",
-										src: "https://cdn.dribbble.com/users/834691/screenshots/3916216/furniture_shop_teaser.gif"
-									})
-								)
-							),
-							_react2.default.createElement(
-								"h4",
-								null,
-								"Tags"
-							),
-							_react2.default.createElement(
-								"h5",
-								null,
-								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"bitcoin,"
+									"li",
+									{ className: "list" },
+									_react2.default.createElement(
+										"h2",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "#" },
+											_react2.default.createElement("img", {
+												className: "thumb-image",
+												src: "https://cdn.dribbble.com/users/32742/avatars/small/1442487eec674feb1b3ca30a8984eb4e.png?1446548820"
+											}),
+											"Epic Coders \uD83D\uDE80"
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										null,
+										_react2.default.createElement(
+											"p",
+											null,
+											_react2.default.createElement(
+												"a",
+												{ href: "#" },
+												"@Ron Design"
+											),
+											"well executed. Is this being developed by someone or is it just a concept?"
+										)
+									),
+									_react2.default.createElement("span", null),
+									_react2.default.createElement(
+										"p",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "post", href: "#" },
+											"about 1 month ago"
+										)
+									)
 								),
 								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"blockchain,"
+									"li",
+									{ className: "list" },
+									_react2.default.createElement(
+										"h2",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "#" },
+											_react2.default.createElement("img", {
+												className: "thumb-image",
+												src: "https://cdn.dribbble.com/users/589030/avatars/small/f28e9ceb03843b534035380076a24107.png?1515390876"
+											}),
+											"Med Badr Chemmaoui"
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										null,
+										_react2.default.createElement(
+											"p",
+											null,
+											"amazing work my friend!"
+										)
+									),
+									_react2.default.createElement("span", null),
+									_react2.default.createElement(
+										"p",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "post", href: "#" },
+											"about 1 month ago"
+										)
+									)
 								),
 								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"crypto"
-								)
-							),
-							_react2.default.createElement(
-								"h5",
-								null,
-								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"cryptocurrency,"
+									"li",
+									{ className: "list" },
+									_react2.default.createElement(
+										"h2",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "#" },
+											_react2.default.createElement("img", {
+												className: "thumb-image",
+												src: "https://cdn.dribbble.com/users/1751027/avatars/small/adc62518b5f62703e4971fcff15a0eb4.jpg?1506574140"
+											}),
+											"Rasika Warnasuriya"
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										null,
+										_react2.default.createElement(
+											"p",
+											null,
+											"Nice work.!"
+										)
+									),
+									_react2.default.createElement("span", null),
+									_react2.default.createElement(
+										"p",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "post", href: "#" },
+											"about 1 month ago"
+										)
+									)
 								),
 								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"data,"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"ico"
-								)
-							),
-							_react2.default.createElement(
-								"h5",
-								null,
-								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"bitcoin,"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"blockchain"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag" },
-									"crypto"
+									"li",
+									{ className: "list" },
+									_react2.default.createElement(
+										"h2",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "#" },
+											_react2.default.createElement("img", {
+												className: "thumb-image",
+												src: "https://cdn.dribbble.com/users/1333064/avatars/small/7660c95c80ce9f341df7f7db574bb24c.png?1488144609"
+											}),
+											" ",
+											"Dimitris Chronopoulos"
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										null,
+										_react2.default.createElement(
+											"p",
+											null,
+											"Love it!"
+										)
+									),
+									_react2.default.createElement("span", null),
+									_react2.default.createElement(
+										"p",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ className: "post", href: "#" },
+											"about 1 month ago"
+										)
+									)
 								)
 							)
 						)
 					),
+					_react2.default.createElement(
+						_reactBootstrap.Col,
+						{ lg: 3, md: 3 },
+						_react2.default.createElement(
+							"div",
+							{
+								style: { paddingBottom: 5, borderBottom: "1px solid #9d9d9d" } },
+							_react2.default.createElement(
+								"h5",
+								{ className: "tag" },
+								_react2.default.createElement("i", { style: { paddingRight: "5px" }, className: "fa fa-heart" }),
+								"Like",
+								_react2.default.createElement(
+									"span",
+									{ className: "pull-right" },
+									"233 likes"
+								),
+								" "
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{
+								style: {
+									paddingBottom: 5,
+									borderBottom: "1px solid #9d9d9d",
+									marginBottom: 10
+								} },
+							_react2.default.createElement(
+								"h5",
+								{ className: "tag" },
+								_react2.default.createElement("i", { style: { paddingRight: "5px" }, className: "fa fa-share" }),
+								"Like",
+								_react2.default.createElement(
+									"span",
+									{ className: "pull-right" },
+									"233 likes"
+								),
+								" "
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "row" },
+							_react2.default.createElement("i", {
+								style: { paddingLeft: 15, fontSize: "20px" },
+								className: "fa fa-tint tag"
+							}),
+							_react2.default.createElement(
+								"div",
+								{
+									className: "pull-right",
+									style: { width: "80%", paddingTop: 5 } },
+								_react2.default.createElement(
+									_reactBootstrap.ProgressBar,
+									null,
+									_react2.default.createElement(_reactBootstrap.ProgressBar, { striped: true, bsStyle: "success", now: 35, key: 1 }),
+									_react2.default.createElement(_reactBootstrap.ProgressBar, { bsStyle: "warning", now: 20, key: 2 }),
+									_react2.default.createElement(_reactBootstrap.ProgressBar, { active: true, bsStyle: "danger", now: 20, key: 3 }),
+									_react2.default.createElement(_reactBootstrap.ProgressBar, { active: true, bsStyle: "warning", now: 25, key: 4 })
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							null,
+							_react2.default.createElement(
+								"h4",
+								null,
+								"More from Ron Design",
+								" ",
+								_react2.default.createElement(
+									"span",
+									{
+										style: {
+											border: "1px solid #ddd",
+											padding: "0 3px",
+											background: "#ddd"
+										},
+										className: "pull-right tag" },
+									"+"
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "" },
+							_react2.default.createElement(
+								_reactBootstrap.Col,
+								{ xs: 6 },
+								_react2.default.createElement("img", {
+									style: { paddingBottom: "18px" },
+									className: "img-responsive",
+									src: "https://cdn.dribbble.com/users/834691/screenshots/4078298/app_workflow_teaser.gif"
+								})
+							),
+							_react2.default.createElement(
+								_reactBootstrap.Col,
+								{ xs: 6 },
+								_react2.default.createElement("img", {
+									style: { paddingBottom: "18px" },
+									className: "img-responsive",
+									src: "https://cdn.dribbble.com/users/1129214/screenshots/4048229/comp_13_teaser.gif"
+								})
+							),
+							_react2.default.createElement(
+								_reactBootstrap.Col,
+								{ xs: 6 },
+								_react2.default.createElement("img", {
+									style: { paddingBottom: "18px" },
+									className: "img-responsive",
+									src: "https://cdn.dribbble.com/users/77531/screenshots/4004391/preview_8_teaser.gif"
+								})
+							),
+							_react2.default.createElement(
+								_reactBootstrap.Col,
+								{ xs: 6 },
+								_react2.default.createElement("img", {
+									style: { paddingBottom: "18px" },
+									className: "img-responsive",
+									src: "https://cdn.dribbble.com/users/834691/screenshots/3916216/furniture_shop_teaser.gif"
+								})
+							)
+						),
+						_react2.default.createElement(
+							"h4",
+							null,
+							"Tags"
+						),
+						_react2.default.createElement(
+							"h5",
+							null,
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"bitcoin,"
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"blockchain,"
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"crypto"
+							)
+						),
+						_react2.default.createElement(
+							"h5",
+							null,
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"cryptocurrency,"
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"data,"
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"ico"
+							)
+						),
+						_react2.default.createElement(
+							"h5",
+							null,
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"bitcoin,"
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"blockchain"
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "tag" },
+								"crypto"
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					_reactBootstrap.Row,
+					null,
+					_react2.default.createElement("div", { className: "col-md-2" }),
+					_react2.default.createElement("div", { className: "col-md-8", style: { borderTop: '1px solid #9d9d9d' } }),
+					_react2.default.createElement("div", { className: "col-md-2" })
+				),
+				_react2.default.createElement(
+					"div",
+					{ style: { margin: '50px 0px' } },
 					_react2.default.createElement(
 						_reactBootstrap.Row,
 						null,

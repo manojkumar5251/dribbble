@@ -2,15 +2,7 @@ import React, { Component } from "react";
 import { Grid, Row, Col, Panel, ProgressBar } from "react-bootstrap";
 
 class Body extends React.Component {
-	state = { height: "300px", width: "400px" };
-	zoom() {
-		if (this.state.height === "300px") {
-			this.setState({ height: "600px", width: "800px" });
-		}
-		if (this.state.height === "600px") {
-			this.setState({ height: "300px", width: "400px" });
-		}
-	}
+
 	render() {
 		return (
 			<div className="container body">
@@ -63,16 +55,10 @@ class Body extends React.Component {
 						</Col>
 					</Row>
 
-					<Row className="main">
-						<Col lg={2} md={2} />
-						<Col lg={5} md={5}>
-							<div className="image-div">
-								<img
-									style={{
-										maxWidth: this.state.width,
-										maxHeight: this.state.height,
-									}}
-									onClick={this.zoom.bind(this)}
+						<Col lg={2} md={2} xs={12}/>
+						<Col lg={5} md={5} xs={12}>
+							<div >
+								<img className='img-responsive'
 									src="https://cdn.dribbble.com/users/834691/screenshots/3978177/crypto_dashboard.gif"
 								/>
 							</div>
@@ -311,7 +297,7 @@ class Body extends React.Component {
 										<ProgressBar striped bsStyle="success" now={35} key={1} />
 										<ProgressBar bsStyle="warning" now={20} key={2} />
 										<ProgressBar active bsStyle="danger" now={20} key={3} />
-										<ProgressBar active bsStyle="warning" now={25} key={3} />
+										<ProgressBar active bsStyle="warning" now={25} key={4} />
 									</ProgressBar>
 								</div>
 							</div>
@@ -379,21 +365,26 @@ class Body extends React.Component {
 								<span className="tag">crypto</span>
 							</h5>
 						</Col>
-					</Row>
-					<Row>
-						<center className="keyboard">
-							<p>
-								keyboard shortcuts:
-								<span>
-									<strong>L</strong> or <strong>F</strong> like
-								</span>
-								<span>
-									<strong>Z</strong> toggle zoom
-								</span>
-							</p>
-						</center>
-					</Row>
 				</Grid>
+				<Row>
+					<div className='col-md-2'></div>
+					<div className='col-md-8' style={{borderTop:'1px solid #9d9d9d' }}></div>
+					<div className='col-md-2' ></div>
+				</Row>
+				<div style={{margin:'50px 0px'}}>
+					<Row>
+					<center className="keyboard">
+						<p>
+							keyboard shortcuts:
+							<span>
+								<strong>L</strong> or <strong>F</strong> like
+							</span>
+							<span>
+								<strong>Z</strong> toggle zoom
+							</span>
+						</p>
+					</center>
+				</Row></div>
 			</div>
 		);
 	}

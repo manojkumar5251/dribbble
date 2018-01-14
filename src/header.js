@@ -9,6 +9,7 @@ class Header extends Component {
 					<Navbar.Header>
 						<Navbar.Brand>
 							<img
+								style={{paddingLeft:'35%'}}
 								alt="dribbble"
 								src="https://cdn.dribbble.com/assets/logo-small-4612353cefa78dfe35ba5e8e9d35da9f9305a3a516ef9675b5c37004c5862b6d.png"
 							/>
